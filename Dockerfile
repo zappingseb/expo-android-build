@@ -11,4 +11,4 @@ RUN apt-get update && apt-get install -y sudo curl && \
     gem install fastlane && \
     rm -rf /var/lib/{apt,dpkg,cache,log}/
 
-RUN npm install -g turtle-cli gulp-cli expo-cli --unsafe-perm=true --allow-root && npm cache clean --force
+RUN npm install -g turtle-cli gulp-cli expo-cli @pnp/cli-microsoft365 --unsafe-perm=true --allow-root && npm cache clean --force
